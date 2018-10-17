@@ -46,10 +46,12 @@ When this is called using python score_model.py in the command line, this will i
 
 3. Critical Thinking (2 points total)
 Modify this ReadMe file to answer the following questions directly in place.<br>
+
 	> 1) Kaggle changes links/ file locations/login process/ file content
 
   The code should be able to handle this kind of changes, meaning that there should be one place that holds the URLs/credentials/file names (if too many) to feed into the function to download the datasets. In this project's case, REST calls are done to Kaggle APIs and takes in from console the username/password. At any point and time, the code should handle errors whether URL, login or dataset contents. The error should indicate what's happening and nased on that to address a fix for it.
   <br>
+
 	> 2) We run out of space on HD / local permissions issue - can't save files
 
   Based on the size of the datasets working with and taking into the consideration the code compile time and runtime, if this will exhaust the local machine then an alternative ways are needed to be used, for example:
@@ -60,10 +62,12 @@ Modify this ReadMe file to answer the following questions directly in place.<br>
 
   In case of permission issues, it's better to use SSL certificates and throw errors if cert file is not there or if permission is not verified, etc.
   <br>
+
 	> 3) Someone updated python packages and there is unintended effect (functions retired or act differently)
 
   The code should be bound with error catchers, with excepts and other forms of error handling methods. Tagging with docker images can help revert to a specific version when there's an error with the latest version or the deployed version for packages within the application. If community packages, then there should be a way in the code design to notice this behavior.
   <br>
+
   > 4) Docker issues - lost internet within docker due to some ip binding to vm or local routing issues( I guess this falls under lost internet, but I am talking more if docker is the cause rather then ISP)
 
   There are multiple ways to target fixes to issues with docker based on each issue situation. To best handle docker behaviors, we can:
