@@ -119,7 +119,7 @@ nose==1.3.7
 notebook==5.6.0
 numba==0.38.1+1.gc42707d0f.dirty
 numexpr==2.6.5
-numpy==1.13.1
+numpy==1.22.0
 numpydoc==0.8.0
 odo==0.5.1
 olefile==0.45.1
